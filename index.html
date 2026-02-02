@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>To_Do_APP</title>
+  </head>
+  <body>
+    <h1>TODO APP</h1>
+    <div class="container">
+      <!--Top progress bar-->
+      <div class="stats_container">
+        <div class="detail">
+          <h2>Todo Task Done</h2>
+          <p>Keep it Up!</p>
+          <p>Almost there</p>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="stats-number">
+          <p id="numbers">0/0</p>
+        </div>
+      </div>
+      <!--form to add task-->
+      <form action="">
+        <input id="task" type="text" placeholder="Enter your tasks">
+        <button id="addTask" type="submit">
+          <i class="ri-add-line"></i>
+        </button>
+      </form>
+      <!--Display task-->
+      <ul id="task_list"></ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
